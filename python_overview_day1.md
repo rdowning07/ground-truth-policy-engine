@@ -6,9 +6,36 @@ This document is for **zero prior Python**. It defines every concept you will ne
 
 ## How to use this doc
 
-- **Stages 1–11** build in order. Each stage adds one idea and ties it to “why we need it for policy/eligibility logic.”
+- **Stage 0** gets your environment ready (no code yet). **Stages 1–11** build in order. Each stage adds one idea and ties it to “why we need it for policy/eligibility logic.”
 - **“Where you’ll see it”** in each stage points to the curriculum phase and the canonical example so you can cross-check.
 - After Stage 11, use **“Mapping the Phase 1 example”** to read the canonical code line by line with the concept that explains it.
+- For a compact lookup of “concept → Python syntax,” see **Quick reference** and the [Glossary](GLOSSARY.md).
+
+---
+
+## Stage 0: Get ready to run Python (environment)
+
+### What it is
+
+Before you run any code, you need **Python installed** and a way to run commands (a **terminal**). The project may also provide a **virtual environment** (e.g. `.venv`)—an isolated copy of Python and packages for this project.
+
+### Why it matters
+
+If Python isn’t installed or you’re in the wrong folder, “run the script” fails and you can’t practice. Doing this once unblocks everything else.
+
+### What to do
+
+1. **Check Python:** Open a terminal and run `python3 --version`. You should see something like `Python 3.11.x`. If you get “command not found,” install Python from [python.org](https://www.python.org/downloads/) or your system package manager.
+2. **Find the project folder:** Use `cd` to go to the folder that contains `src` and `curriculum` (e.g. `cd ~/Dev/ground-truth-policy-engine`).
+3. **Optional but recommended:** If the project has a `.venv` folder, activate it so you use this project’s Python:
+   - On macOS/Linux: `source .venv/bin/activate`
+   - On Windows (Command Prompt): `.venv\Scripts\activate.bat`
+   - Your prompt may show `(.venv)` when it’s active.
+4. **Run the scaffold:** From the project root, run `python3 src/engine.py`. You should see two lines of output. If you do, you’re ready for Stage 1.
+
+### Where you’ll see it
+
+- [Phase 1](curriculum/phase_1_deterministic_evaluation.md) Hours 1–2: “Install Python and run a single script.”
 
 ---
 
@@ -29,6 +56,29 @@ Backend logic lives in scripts (or modules). You need to be able to run your cod
 3. In a terminal, from the folder that contains the file (or with the path to the file), run: `python3 engine.py` (or `python3 src/engine.py` if the file is in `src/`).
 
 Example: a file containing only `print("hello")` will, when run, output `hello`.
+
+### The entry point: `if __name__ == "__main__":`
+
+In `src/engine.py` you will see:
+
+```python
+if __name__ == "__main__":
+    main()
+```
+
+When you run `python3 src/engine.py`, Python runs the file. The line `if __name__ == "__main__":` means: “run the block below **only when this file is executed**, not when it’s imported by another file.” For Day 1, treat it as “this is where execution starts when I run the script.”
+
+### Your first script (do this now)
+
+Create a new file (e.g. `first_script.py` in the project root) with exactly:
+
+```python
+age = 20
+print("Age is", age)
+print("Passes age check?", age >= 18)
+```
+
+Run it: `python3 first_script.py`. You should see two lines. Change `20` to `17` and run again; the second line should change. You’ve used a variable, `print`, and a comparison—enough to confirm the environment works.
 
 ### Where you’ll see it
 
@@ -60,6 +110,8 @@ You don’t “declare” types in Python; you just write values. Python infers 
 - Number: `18`, `0`, `120`
 - String: `"missing age"`, `"US"`
 - Boolean: `True`, `False`
+
+**One more value: `None`.** Python has a special value `None` meaning “no value” or “not set.” We use it when a field is optional (e.g. “no failure reason yet”). You’ll see it in Phase 2 and later; for Phase 1 you only need to know it exists.
 
 ### Where you’ll see it
 
@@ -145,7 +197,9 @@ Comparisons are used inside conditionals and in assignments (e.g. `passed = age 
 
 ### What it is
 
-A **conditional** is a branch in the program: “if this condition is true, do this; otherwise do that.” In Python you write `if condition:` and optionally `else:`. The code under `if` runs only when the condition is True; the code under `else` runs when it’s False. Indentation (usually 4 spaces) defines which lines belong to the if or else block.
+A **conditional** is a branch in the program: “if this condition is true, do this; otherwise do that.” In Python you write `if condition:` and optionally `else:`. The code under `if` runs only when the condition is True; the code under `else` runs when it’s False. **Indentation (usually 4 spaces) defines which lines belong to the if or else block.**
+
+**Indentation is part of the syntax.** In Python, indentation isn’t just style—it defines blocks of code. Wrong indentation causes an `IndentationError` or changes what runs. Use **spaces** (typically 4 per level), not tabs, and keep them consistent. The body of an `if`, `else`, or `for` must be indented one level more than the line that starts the block.
 
 ### Why you use it
 
@@ -205,7 +259,7 @@ Records in the real world have named fields (id, age, region, verified). A dict 
 ### How you use it
 
 - Literal: `{"id": 1, "age": 25}`, `{"id": user_id, "passed": passed}`.
-- Read: `record["id"]`, `record["age"]`. If the key might be missing, we later learn patterns like `record.get("age", 0)` (Phase 2).
+- Read: `record["id"]`, `record["age"]`. **If the key doesn’t exist,** `record["age"]` causes a `KeyError`. In Phase 2 we handle missing data with guard clauses and patterns like `record.get("age", default)` to avoid that.
 - Keys are usually strings; values can be any type (number, string, boolean, list, another dict).
 
 ### Where you’ll see it
@@ -276,6 +330,8 @@ return results                  # full list when loop is done
 
 A **function** is a named block of code that takes **inputs** (parameters) and can **return** a value. You define it with `def name(parameter1, parameter2):` and indent the body. You **return** a value with `return something`. Callers use the function by name and pass arguments: `evaluate_age_rule(my_records)`.
 
+**Docstrings and comments.** The triple-quoted string immediately under `def ...` is a **docstring**—it describes what the function does (e.g. `"""One rule: age must be >= 18. ..."""`). Lines starting with `#` are **comments**; Python ignores them. Both help humans (and you) understand the code.
+
 ### Why you use it
 
 We want “one job” per function (e.g. “evaluate this one rule over many records”). Functions let us name that job, pass in data (the list of records), and get back a result (the list of outcomes) without duplicating code. Rules and validation will also be functions so we can test and reuse them.
@@ -311,11 +367,84 @@ After the stages above, open [Phase 1 canonical example](canonical_examples/phas
 
 ---
 
+## When something goes wrong (reading errors)
+
+When Python can’t run your code, it prints a **traceback** (a stack of lines) and an **error message**. You don’t have to understand every line; focus on the **last two lines**:
+
+1. **Error type and message** (e.g. `NameError: name 'age' is not defined`, `KeyError: 'age'`).
+2. **File and line number** (e.g. `File "src/engine.py", line 12`).
+
+**Common errors and what they usually mean:**
+
+| Error | Likely cause | What to check |
+|-------|----------------|----------------|
+| `NameError: name 'x' is not defined` | You used a variable before assigning it or you misspelled it. | Assign the variable first (e.g. `age = record["age"]`) or fix the spelling. |
+| `KeyError: 'age'` | You used `record["age"]` but that key isn’t in the dict. | Ensure the record has an `"age"` key, or use validation/guard clauses (Phase 2). |
+| `IndentationError` | Spaces/tabs are wrong or mixed. | Use 4 spaces per level; no tabs. Make sure the body of `if`/`for`/`def` is indented. |
+| `SyntaxError` | Invalid Python (e.g. missing `:`, wrong brackets). | Check the line pointed to; often a missing colon after `if`/`else`/`for`/`def`. |
+
+The traceback lists calls from top (where you ran) to bottom (where the error happened). Use the file and line to find the spot, then the message to decide the fix.
+
+---
+
+## Quick reference: concept → Python (zero coding assumed)
+
+Use this when you know the idea but forget the exact syntax. See the stages above for “why” and “how.”
+
+| Concept | Python form |
+|---------|-------------|
+| Run a script | `python3 path/to/file.py` |
+| Print output | `print("text")` or `print("Age", age)` |
+| Integer / number | `18`, `0` |
+| Text / string | `"hello"`, `'also a string'` |
+| Yes/no value | `True`, `False` |
+| No value / not set | `None` |
+| Variable (assign) | `name = value` |
+| Equal (comparison) | `a == b` |
+| Not equal | `a != b` |
+| Less than / greater than | `a < b`, `a > b`, `a <= b`, `a >= b` |
+| Value in list | `x in my_list` |
+| If / else block | `if condition:` then indented block; optional `else:` and indented block |
+| Empty list | `[]` |
+| List literal | `[a, b, c]` |
+| Add to end of list | `my_list.append(value)` |
+| Number of items | `len(my_list)` |
+| Dict literal | `{"key": value, "key2": value2}` |
+| Read from dict | `record["key"]` (key must exist or you get KeyError) |
+| Loop over list | `for item in my_list:` then indented block |
+| Define function | `def name(param1, param2):` then indented body |
+| Return value | `return value` |
+| Call function | `name(arg1, arg2)` |
+| Comment | `# rest of line ignored` |
+| Docstring (under def) | `"""Description of function."""` |
+
+---
+
 ## What to do next
 
-1. **Run something.** Create a tiny script (e.g. one variable, one `print`), run it with `python3`, and confirm you see output.
+1. **Run something.** If you haven’t yet, do **Your first script** under Stage 1; then run `python3 src/engine.py` and confirm you see output.
 2. **Re-read Stages 4 (deterministic), 9 (loops), and 10 (accumulators)** so “why we use them” and “how we use them” are clear.
 3. **Open the [Phase 1 curriculum](curriculum/phase_1_deterministic_evaluation.md)** and the [Phase 1 canonical example](canonical_examples/phase_1_canonical_example.md); use the mapping table above to label each part of the code with its concept.
 4. **Start Phase 1** (Hours 1–6): implement the same pattern yourself in `src/engine.py` for one rule and many records.
+5. When you forget a term, use the [Glossary](GLOSSARY.md) or the **Quick reference** table above.
+
+---
+
+## For mentors: Is more “definition → Python” useful for zero experience?
+
+For someone with **zero Python or coding knowledge**, this doc now includes:
+
+- **Stage 0** — Environment and “see it run” before any concepts.
+- **First script** — A single copy-paste exercise (variable, `print`, comparison) for an immediate win.
+- **Indentation** — Explicit callout that it’s syntax, not style, with a concrete warning (spaces, no tabs).
+- **Errors** — “When something goes wrong” with a small table of common errors and what to check.
+- **None** — Introduced early so it’s not a surprise in Phase 2+.
+- **`if __name__ == "__main__"`** — One sentence so the scaffold file isn’t mysterious.
+- **Docstrings and comments** — So triple-quotes and `#` are named when they appear in the canonical example.
+- **KeyError / .get()** — Foreshadowed in Stage 8 so missing keys aren’t a blind surprise.
+- **Quick reference** — Concept → Python form in one table for “I know the idea but forget the syntax.”
+- **Glossary** — One place to re-find terms and see which stage/phase they come from.
+
+**When to add more:** If the intern repeatedly asks “what’s the exact syntax for X?” or gets stuck on the same kind of error, add one row to the Quick reference or one entry to the Glossary and point them there. Avoid expanding the staged narrative with more primitives before Phase 1; the goal is “just enough” to read and write the Phase 1 example. Extra definition/spec (e.g. “what is a type hint?” or “what is a module?”) can be added on demand when a later phase or the codebase introduces it.
 
 Back to [Curriculum overview](curriculum_overview.md).

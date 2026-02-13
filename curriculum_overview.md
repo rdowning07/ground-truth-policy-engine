@@ -2,7 +2,7 @@
 
 This document is the map. Each phase has its own detailed curriculum and a canonical example. **Assume no prior Python;** concepts are introduced in context.
 
-**Before Phase 1:** If you have zero Python experience, work through **[Python overview: Day 1](python_overview_day1.md)**. It defines every concept you need (values, variables, deterministic, conditionals, lists, loops, accumulators, functions) in clear stages—what each is, why we use it, how we use it—and maps them to the Phase 1 example. Then start Phase 1.
+**Before Phase 1:** If you have zero Python experience, work through **[Python overview: Day 1](python_overview_day1.md)**. It defines every concept you need (values, variables, deterministic, conditionals, lists, loops, accumulators, functions) in clear stages—what each is, why we use it, how we use it—and maps them to the Phase 1 example. For a one-place lookup of terms, see the **[Glossary](GLOSSARY.md)**. Then start Phase 1.
 
 ---
 
