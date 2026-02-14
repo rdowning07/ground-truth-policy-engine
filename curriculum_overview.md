@@ -4,6 +4,29 @@ This document is the map. Each phase has its own detailed curriculum and a canon
 
 **Before Phase 1:** If you have zero Python experience, work through **[Python overview: Day 1](python_overview_day1.md)**. It defines every concept you need (values, variables, deterministic, conditionals, lists, loops, accumulators, functions) in clear stages—what each is, why we use it, how we use it—and maps them to the Phase 1 example. For a one-place lookup of terms, see the **[Glossary](GLOSSARY.md)**. Then start Phase 1.
 
+**Avoiding overwhelm:** This course is 30 hours of content with no required prior Python. To avoid burnout, use **session boundaries** instead of doing whole phases in one sitting. See **[Recommended pacing](#recommended-pacing-and-session-boundaries)** below and the full comparison to other 0-to-fluency courses in **[CURRICULUM_EVALUATION.md](CURRICULUM_EVALUATION.md)**.
+
+---
+
+## Recommended pacing and session boundaries
+
+Use these as default stop/resume points. Each session is roughly 1–2 hours.
+
+| Session | Content | Stop after |
+|---------|---------|------------|
+| 1 | Day 1: Stage 0 + Stages 1–4 | Environment, script, values, variables, deterministic. |
+| 2 | Day 1: Stages 5–11 + Phase 1 mapping | Comparisons through functions; map canonical example. |
+| 3 | Phase 1 Hours 1–2 | One record, variable, conditional, single outcome. |
+| 4 | Phase 1 Hours 3–4 | List of records, for-loop, list of outcomes. |
+| 5 | Phase 1 Hours 5–6 | Accumulator, full function, return list. **Phase 1 complete.** |
+| 6–7 | Phase 2 (Hours 7–12) | Guard clauses, validation, structured failure. |
+| 8–9 | Phase 3 (Hours 13–18) | Rule composition, multi-rule, reasons. |
+| 10 | Phase 4 (Hours 19–22) | Decomposition, validate → evaluate → format. |
+| 11–12 | Phase 5 (Hours 23–28) | Stateful CLI, command loop, I/O at edge. |
+| 13 | Phase 6 (Hours 29–30) | Rebuild from scratch. |
+
+**Rule of thumb:** If you have less than ~1.5 hours, do only the next sub-chunk (e.g. Phase 1 Hours 1–2, or Phase 2 Hours 7–8) and stop. After each phase, take a short break before starting the next.
+
 ---
 
 ## Session format (every time)
@@ -38,9 +61,10 @@ This document is the map. Each phase has its own detailed curriculum and a canon
 ## How to use this curriculum
 
 1. **(Zero Python?)** Do [Python overview: Day 1](python_overview_day1.md) first—stages 1–11 and the Phase 1 mapping table.
-2. Start with [Phase 1](curriculum/phase_1_deterministic_evaluation.md); read the phase doc and the [Phase 1 canonical example](canonical_examples/phase_1_canonical_example.md).
-3. Implement the phase in `src/engine.py` (or as directed); get critique.
-4. Proceed through phases 2–5 in order; each builds on the previous.
-5. For Phase 6, put the code in `rebuild/scratch.py` and do not copy from the main engine.
+2. Use **[Recommended pacing](#recommended-pacing-and-session-boundaries)** so you don’t do whole phases in one sitting.
+3. Start with [Phase 1](curriculum/phase_1_deterministic_evaluation.md); read the phase doc and the [Phase 1 canonical example](canonical_examples/phase_1_canonical_example.md).
+4. Implement the phase in `src/engine.py` (or as directed); get critique.
+5. Proceed through phases 2–5 in order; each builds on the previous.
+6. For Phase 6, put the code in `rebuild/scratch.py` and do not copy from the main engine.
 
-See the [charter](charter.md) for non-negotiables and definition of progress.
+See the [charter](charter.md) for non-negotiables and definition of progress. For a comparison to courses like 30 Days of Java and what was added to reduce overwhelm, see [CURRICULUM_EVALUATION.md](CURRICULUM_EVALUATION.md).
