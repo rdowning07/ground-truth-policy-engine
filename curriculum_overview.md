@@ -67,4 +67,4 @@ Use these as default stop/resume points. Each session is roughly 1–2 hours.
 5. Proceed through phases 2–5 in order; each builds on the previous.
 6. For Phase 6, put the code in `rebuild/scratch.py` and do not copy from the main engine.
 
-See the [charter](charter.md) for non-negotiables and definition of progress. For a comparison to courses like 30 Days of Java and what was added to reduce overwhelm, see [CURRICULUM_EVALUATION.md](CURRICULUM_EVALUATION.md). For optional external practice in phase order, see [SUPPLEMENTAL_LEARNING.md](SUPPLEMENTAL_LEARNING.md).
+See the [charter](charter.md) for non-negotiables and definition of progress. For a comparison to courses like 30 Days of Java and what was added to reduce overwhelm, see [CURRICULUM_EVALUATION.md](CURRICULUM_EVALUATION.md). For optional external practice in phase order, see [SUPPLEMENTAL_LEARNING.md](SUPPLEMENTAL_LEARNING.md). For where this curriculum sits in industry and what else jr devs need for other roles, see [INDUSTRY_EVALUATION.md](INDUSTRY_EVALUATION.md).
