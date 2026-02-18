@@ -10,6 +10,7 @@ This document is for **zero prior Python**. It defines every concept you will ne
 - **“Where you’ll see it”** in each stage points to the curriculum phase and the canonical example so you can cross-check.
 - After Stage 11, use **“Mapping the Phase 1 example”** to read the canonical code line by line with the concept that explains it.
 - For a compact lookup of “concept → Python syntax,” see **Quick reference** and the [Glossary](GLOSSARY.md).
+- For a **reference curriculum** with explicit, verbose code and tutor-style comments for each concept, see [REFERENCE_CURRICULUM_DAY1.md](REFERENCE_CURRICULUM_DAY1.md) and the runnable [reference_day1_examples.py](reference_day1_examples.py).
 
 ---
 
