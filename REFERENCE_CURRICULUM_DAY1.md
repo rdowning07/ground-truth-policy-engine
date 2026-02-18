@@ -385,6 +385,8 @@ python3 reference_day1_examples.py
 
 to execute each section and see the output. Use it as a reference when you’re implementing Phase 1 in `src/engine.py`.
 
+**Next:** After Phase 1, see [REFERENCE_CURRICULUM_DAY2.md](REFERENCE_CURRICULUM_DAY2.md) for guard clauses and validation (Phase 2).
+
 ---
 
 Back to [Python overview: Day 1](python_overview_day1.md) · [Curriculum overview](curriculum_overview.md).

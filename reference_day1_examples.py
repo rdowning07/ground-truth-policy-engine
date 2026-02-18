@@ -6,6 +6,10 @@ Run: python3 reference_day1_examples.py
 
 Each section is commented as a tutor would explain it. No clever code—explicit and boring.
 """
+# Pylint: pedagogical names (age, passed, user_id) and deliberate if/else for teaching.
+# pylint: disable=invalid-name,simplifiable-if-statement,redefined-outer-name
+
+from typing import Any
 
 # =============================================================================
 # 1. Script and print: run a file and see output
@@ -57,8 +61,11 @@ minimum_age = 18
 print("age == 20 is", age == 20)
 print("age == 18 is", age == 18)
 print("age != 0 is", age != 0)
+print("age > minimum_age is", age > minimum_age)
 print("age >= minimum_age is", age >= minimum_age)
 print("age >= 21 is", age >= 21)
+print("age < 21 is", age < 21)
+print("age <= 20 is", age <= 20)
 passed = age >= minimum_age
 print("passed is", passed)
 
@@ -80,16 +87,18 @@ print("age", age, "-> passed is", passed)
 # 6. Lists: ordered collections
 # =============================================================================
 # A list is [a, b, c]. We append to it and get length with len(...).
+# We use a different variable name here so "results" is not typed as list[str]
+# for mypy when we later use "results" for list of dicts in examples 9 and 11.
 
 print("\n--- Example 6: Lists ---")
-results = []
+collected: list[str] = []
 numbers = [1, 2, 3]
 regions = ["US", "UK", "CA"]
 print("len(numbers) is", len(numbers))
-results.append("first result")
-results.append("second result")
-print("results is now", results)
-print("len(results) is", len(results))
+collected.append("first result")
+collected.append("second result")
+print("results is now", collected)
+print("len(results) is", len(collected))
 first_number = numbers[0]
 print("first element of numbers is", first_number)
 
@@ -159,7 +168,8 @@ print("results is", results)
 print("\n--- Example 10: Function ---")
 
 
-def add_one(x):
+def add_one(x: int) -> int:
+    """Return x + 1. Used to show function definition and return."""
     result = x + 1
     return result
 
@@ -173,14 +183,14 @@ print("add_one(10) is", answer)
 # Same logic as the Phase 1 canonical example, with step-by-step comments.
 
 
-def evaluate_age_rule(records):
+def evaluate_age_rule(records: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """
     One rule: age must be >= 18.
     We take a list of records (each has "id" and "age") and return a list of
     results (each has "id" and "passed"). Same number of results as records.
     """
     # Step 1: Create the accumulator. It must exist before the loop.
-    results = []
+    results: list[dict[str, Any]] = []
 
     # Step 2: Loop over every record in the list.
     for record in records:
