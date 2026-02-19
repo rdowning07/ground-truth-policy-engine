@@ -71,7 +71,7 @@ By the end of Phase 3 you will implement **multi-rule evaluation** that produces
 
 ## Canonical example
 
-See **[Phase 3 canonical example](../canonical_examples/phase_3_canonical_example.md)** for multiple rules, structured returns, and full failure accumulation.
+See **[Phase 3 canonical example](../canonical_examples/phase_3_canonical_example.md)** for multiple rules, structured returns, and full failure accumulation. For a tutor-style walkthrough with verbose, commented code, see **[REFERENCE_CURRICULUM_DAY3.md](../REFERENCE_CURRICULUM_DAY3.md)** and **[reference_day3_examples.py](../reference_day3_examples.py)**.
 
 ---
 

@@ -279,7 +279,7 @@ python3 reference_day2_examples.py
 
 Use it as a reference when implementing Phase 2 in `src/engine.py`.
 
-**Previous:** [REFERENCE_CURRICULUM_DAY1.md](REFERENCE_CURRICULUM_DAY1.md) (Phase 1: one rule, many records).
+**Previous:** [REFERENCE_CURRICULUM_DAY1.md](REFERENCE_CURRICULUM_DAY1.md) (Phase 1). **Next:** [REFERENCE_CURRICULUM_DAY3.md](REFERENCE_CURRICULUM_DAY3.md) (Phase 3: rule composition).
 
 ---
 
