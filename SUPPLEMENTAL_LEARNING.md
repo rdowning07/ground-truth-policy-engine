@@ -1,6 +1,6 @@
 # Supplemental learning (optional, in phase order)
 
-This document lists **optional** external resources in the **same order as the curriculum**. Use them only if you want more practice or broader Python exposure. They are **not required** and must not replace the main path: [Python overview: Day 1](python_overview_day1.md) → [Phase 1](curriculum/phase_1_deterministic_evaluation.md) → … → Phase 6.
+This document lists **optional** external resources in the **same order as the curriculum**. Use them only if you want more practice or broader Python exposure. They are **not required** and must not replace the main path: [Python fundamentals](python_fundamentals.md) → [Phase 1](curriculum/phase_1_deterministic_evaluation.md) → … → Phase 6.
 
 **Rule:** Complete each curriculum step in order. Use a supplemental resource only when it’s listed for your current (or completed) phase, and only in the order given below.
 
@@ -10,7 +10,7 @@ This document lists **optional** external resources in the **same order as the c
 
 | Curriculum position | Supplemental recommendations (do in this order if you use them) |
 |---------------------|------------------------------------------------------------------|
-| **Before Phase 1** (Day 1) | 1) 30 Days of Python Days 1–4 (syntax, types, operators, strings). 2) 30 Days Day 5 (lists) and Day 8 (dictionaries). |
+| **Before Phase 1** (Python fundamentals) | 1) 30 Days of Python Days 1–4 (syntax, types, operators, strings). 2) 30 Days Day 5 (lists) and Day 8 (dictionaries). |
 | **After Phase 1** | 1) CodingBat Python Warmup-1, List-1. 2) Practice Python exercises 1–15. 3) Optional: 30 Days Days 9–11 (conditionals, loops, functions). |
 | **After Phase 2** | 1) 30 Days Day 17 (exception handling) — reference only; we use explicit returns, not exceptions, in rules. |
 | **After Phase 3** | (Optional) More “multiple conditions” practice: CodingBat Logic-1, or Practice Python exercises 16–25. |
@@ -20,15 +20,15 @@ This document lists **optional** external resources in the **same order as the c
 
 ---
 
-## Before Phase 1: Python overview (Day 1)
+## Before Phase 1: Python fundamentals
 
-You are here when: you are working through [Python overview: Day 1](python_overview_day1.md) (Stages 0–11 and the Phase 1 mapping table).
+You are here when: you are working through [Python fundamentals](python_fundamentals.md) (Stages 0–11 and the Phase 1 mapping table).
 
 **Supplemental order (optional):**
 
 1. **30 Days of Python — Days 1–4**  
    [GitHub: Asabeneh/30-Days-Of-Python](https://github.com/Asabeneh/30-Days-Of-Python)  
-   - **Day 1:** Introduction, environment, syntax, indentation, comments, data types. Use only as extra exposure; our Day 1 is tailored to Phase 1.  
+   - **Day 1:** Introduction, environment, syntax, indentation, comments, data types. Use only as extra exposure; our Python fundamentals doc is tailored to Phase 1.  
    - **Day 2:** Variables, built-in functions.  
    - **Day 3:** Operators (arithmetic, comparison, logical).  
    - **Day 4:** Strings (we use strings for keys and messages; deep dive only if you need it).  
@@ -128,7 +128,7 @@ To keep the curriculum in spec and avoid overwhelm, **do not** treat the followi
 - **List comprehensions, higher-order functions** — Charter: no clever one-liners, no premature abstraction.  
 - **Classes and OOP** — Charter: no classes unless clearly required.  
 - **Web, APIs, pandas, MongoDB** — Out of scope; different learning goals.  
-- **Replacing our Day 1 with 30 Days Day 1** — Our Day 1 is tailored to Phase 1; follow it first.
+- **Replacing our Python fundamentals with 30 Days Day 1** — Our Python fundamentals doc is tailored to Phase 1; follow it first.
 
 If you want to explore those later, do so **after** you finish Phase 6 and the rebuild.
 

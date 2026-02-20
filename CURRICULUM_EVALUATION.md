@@ -30,7 +30,7 @@ This document compares the 30-Hour Policy Engine curriculum to established “0 
 - **Business paragraph → code** — Translation is the skill; matches real work.
 - **Canonical examples + mapping** — Learners can read code and tie it to concepts.
 - **Charter and success criteria** — Clear definition of “done” per phase.
-- **Python Day 1 + Glossary** — Good for zero-Python learners; concept → syntax available.
+- **Python fundamentals + Glossary** — Good for zero-Python learners; concept → syntax available.
 
 ---
 
@@ -42,7 +42,7 @@ This document compares the 30-Hour Policy Engine curriculum to established “0 
 | **No “day” or “session” pacing** | 30 Days of Java has “Day 1, Day 2, …”; this has “Phase 1, Phase 2” and hour ranges. Missing clear “stop here, resume here” points. |
 | **One big deliverable per phase** | Phase 1 has one outcome (full `evaluate_age_rule`). No smaller wins (e.g. “just the conditional,” “just the loop”) before the full integration. |
 | **No self-check or quiz** | No “can you explain X?” or “write a one-line comparison” before moving on. Mentors provide critique; solo learners have no checkpoint. |
-| **No time estimates per chunk** | Day 1 has 11 stages + mapping; Phase 1 has 3 two-hour blocks. Learners don’t know “Stage 0 is ~15 min” vs “Hours 5–6 are the densest.” |
+| **No time estimates per chunk** | Python fundamentals has 11 stages + mapping; Phase 1 has 3 two-hour blocks. Learners don’t know “Stage 0 is ~15 min” vs “Hours 5–6 are the densest.” |
 | **Single artifact (engine.py)** | Everything goes into one file. No variety (e.g. a tiny script for “only conditionals”) to reinforce one concept in isolation. |
 | **No “if stuck” or “dense section” callouts** | Phases don’t say “Hours 5–6 tie everything together; if overwhelmed, re-read the canonical example and do one record by hand.” |
 | **No optional stretch** | Everyone gets the same path. No “if you finish early, try…” so faster learners have a next step and others don’t feel behind. |
@@ -55,8 +55,8 @@ This document compares the 30-Hour Policy Engine curriculum to established “0 
 ### 1. Recommended pacing (session boundaries)
 
 - **Publish a “recommended schedule”** (e.g. in the curriculum overview or a separate PACING.md):
-  - **Session 1:** Stage 0 + Day 1 Stages 1–4 (~1 hour). Stop. “Next time: Stages 5–11 and mapping.”
-  - **Session 2:** Day 1 Stages 5–11 + Phase 1 mapping (~1 hour). Stop. “Next time: Phase 1 Hours 1–2.”
+  - **Session 1:** Stage 0 + Python fundamentals Stages 1–4 (~1 hour). Stop. “Next time: Stages 5–11 and mapping.”
+  - **Session 2:** Python fundamentals Stages 5–11 + Phase 1 mapping (~1 hour). Stop. “Next time: Phase 1 Hours 1–2.”
   - **Session 3:** Phase 1 Hours 1–2 (one record, variable, conditional). Stop.
   - **Session 4:** Phase 1 Hours 3–4 (list, loop). Stop.
   - **Session 5:** Phase 1 Hours 5–6 (accumulator, full function). Phase 1 done.
@@ -65,7 +65,7 @@ This document compares the 30-Hour Policy Engine curriculum to established “0 
 
 ### 2. Time estimates
 
-- Add **approximate time** to Day 1 stages and Phase hour blocks:
+- Add **approximate time** to Python fundamentals stages and Phase hour blocks:
   - “Stage 0: ~15 min.” “Stages 1–3: ~30 min.” “Stages 4–7: ~45 min.” “Phase 1 Hours 1–2: ~1–2 hours.”
 - Helps learners plan (“I have 45 minutes today → do Stages 4–7”) and avoid “I’ll do all of Phase 1” in one sitting.
 
@@ -130,7 +130,7 @@ This document compares the 30-Hour Policy Engine curriculum to established “0 
 **High impact, low effort:**
 
 1. Add **Recommended pacing** (session boundaries and “stop here”) to the curriculum overview or a short PACING.md.
-2. Add **time estimates** to Day 1 stages and Phase 1 (and optionally other phases).
+2. Add **time estimates** to Python fundamentals stages and Phase 1 (and optionally other phases).
 3. Add **“What you built (recap)”** at the end of each phase doc.
 4. Add **“If stuck” / “dense section”** for Phase 1 Hours 5–6 (and Phase 2 orchestration).
 

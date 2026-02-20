@@ -1,4 +1,4 @@
-# Python overview: Day 1 — What you need before the curriculum
+# Python fundamentals — What you need before the curriculum
 
 This document is for **zero prior Python**. It defines every concept you will need to read and write the Phase 1 example: what each thing is, why we use it, how we use it, and where it appears in the curriculum. Work through the stages in order; by the end you will have the fluency to start [Phase 1 — Deterministic evaluation](curriculum/phase_1_deterministic_evaluation.md).
 
@@ -10,7 +10,7 @@ This document is for **zero prior Python**. It defines every concept you will ne
 - **“Where you’ll see it”** in each stage points to the curriculum phase and the canonical example so you can cross-check.
 - After Stage 11, use **“Mapping the Phase 1 example”** to read the canonical code line by line with the concept that explains it.
 - For a compact lookup of “concept → Python syntax,” see **Quick reference** and the [Glossary](GLOSSARY.md).
-- For a **reference curriculum** with explicit, verbose code and tutor-style comments for each concept, see [REFERENCE_CURRICULUM_DAY1.md](REFERENCE_CURRICULUM_DAY1.md) and the runnable [reference_day1_examples.py](reference_day1_examples.py).
+- For a **reference curriculum** with explicit, verbose code and tutor-style comments for each concept, see [REFERENCE_CURRICULUM_PHASE1.md](REFERENCE_CURRICULUM_PHASE1.md) and the runnable [reference_phase1_examples.py](reference_phase1_examples.py).
 
 ---
 
@@ -67,7 +67,7 @@ if __name__ == "__main__":
     main()
 ```
 
-When you run `python3 src/engine.py`, Python runs the file. The line `if __name__ == "__main__":` means: “run the block below **only when this file is executed**, not when it’s imported by another file.” For Day 1, treat it as “this is where execution starts when I run the script.”
+When you run `python3 src/engine.py`, Python runs the file. The line `if __name__ == "__main__":` means: “run the block below **only when this file is executed**, not when it’s imported by another file.” For this overview, treat it as “this is where execution starts when I run the script.”
 
 ### Your first script (do this now)
 

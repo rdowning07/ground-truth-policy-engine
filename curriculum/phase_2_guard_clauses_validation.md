@@ -70,7 +70,7 @@ By the end of Phase 2 you will **deny safely on missing/invalid data** and **ret
 
 ## Canonical example
 
-See **[Phase 2 canonical example](../canonical_examples/phase_2_canonical_example.md)** for a full validation pipeline with guard clauses and distinct failure reasons. For a tutor-style walkthrough with verbose, commented code, see **[REFERENCE_CURRICULUM_DAY2.md](../REFERENCE_CURRICULUM_DAY2.md)** and **[reference_day2_examples.py](../reference_day2_examples.py)**.
+See **[Phase 2 canonical example](../canonical_examples/phase_2_canonical_example.md)** for a full validation pipeline with guard clauses and distinct failure reasons. For a tutor-style walkthrough with verbose, commented code, see **[REFERENCE_CURRICULUM_PHASE2.md](../REFERENCE_CURRICULUM_PHASE2.md)** and **[reference_phase2_examples.py](../reference_phase2_examples.py)**.
 
 ---
 

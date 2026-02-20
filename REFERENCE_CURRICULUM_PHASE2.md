@@ -1,10 +1,10 @@
-# Reference curriculum: Day 2 — Guard clauses and validation (tutor walkthrough)
+# Reference curriculum: Phase 2 — Guard clauses and validation (tutor walkthrough)
 
 This document is a **reference curriculum** for Phase 2: explicit, step-by-step code with heavy comments for **guard clauses**, **validation**, and **orchestration** (validate first, then run the rule). Every example is runnable. No shortcuts—one concept at a time.
 
-**Prerequisite:** You have completed [Phase 1](curriculum/phase_1_deterministic_evaluation.md) (one rule, many records, loop, conditional, accumulator) and the [Day 1 reference](REFERENCE_CURRICULUM_DAY1.md).
+**Prerequisite:** You have completed [Phase 1](curriculum/phase_1_deterministic_evaluation.md) (one rule, many records, loop, conditional, accumulator) and the [Phase 1 reference](REFERENCE_CURRICULUM_PHASE1.md).
 
-**How to use:** Read each section; run the code (copy into a file or use the [single runnable file](reference_day2_examples.py)). The comments explain *what this line does* and *why we write it this way*.
+**How to use:** Read each section; run the code (copy into a file or use the [single runnable file](reference_phase2_examples.py)). The comments explain *what this line does* and *why we write it this way*.
 
 **Tied to:** [Phase 2 — Guard clauses + validation](curriculum/phase_2_guard_clauses_validation.md) and [Phase 2 canonical example](canonical_examples/phase_2_canonical_example.md).
 
@@ -271,15 +271,15 @@ def validate_then_evaluate_all(records):
 
 ## All examples in one runnable file
 
-The file [reference_day2_examples.py](reference_day2_examples.py) contains all of the above examples in order. Run:
+The file [reference_phase2_examples.py](reference_phase2_examples.py) contains all of the above examples in order. Run:
 
 ```bash
-python3 reference_day2_examples.py
+python3 reference_phase2_examples.py
 ```
 
 Use it as a reference when implementing Phase 2 in `src/engine.py`.
 
-**Previous:** [REFERENCE_CURRICULUM_DAY1.md](REFERENCE_CURRICULUM_DAY1.md) (Phase 1). **Next:** [REFERENCE_CURRICULUM_DAY3.md](REFERENCE_CURRICULUM_DAY3.md) (Phase 3: rule composition).
+**Previous:** [REFERENCE_CURRICULUM_PHASE1.md](REFERENCE_CURRICULUM_PHASE1.md) (Phase 1). **Next:** [REFERENCE_CURRICULUM_PHASE3.md](REFERENCE_CURRICULUM_PHASE3.md) (Phase 3: rule composition).
 
 ---
 

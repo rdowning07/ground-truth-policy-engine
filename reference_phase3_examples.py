@@ -1,10 +1,10 @@
 """
 Reference curriculum: Day 3 — Rule composition (tutor walkthrough).
 
-This file contains all the examples from REFERENCE_CURRICULUM_DAY3.md in order.
-Run: python3 reference_day3_examples.py
+This file contains all the examples from REFERENCE_CURRICULUM_PHASE3.md in order.
+Run: python3 reference_phase3_examples.py
 
-Prerequisite: Phase 1 and Phase 2. See reference_day1_examples.py and reference_day2_examples.py.
+Prerequisite: Phase 1 and Phase 2. See reference_phase1_examples.py and reference_phase2_examples.py.
 """
 # Pylint: pedagogical names and reuse of names across examples.
 # pylint: disable=invalid-name,redefined-outer-name
@@ -182,4 +182,4 @@ record_fail = {"age": 17, "verified": False, "region": "US"}
 print("Pass record:", evaluate_all_rules(record_pass, rules))
 print("Fail record:", evaluate_all_rules(record_fail, rules))
 
-print("\n--- Done. See REFERENCE_CURRICULUM_DAY3.md for the tutor walkthrough. ---")
+print("\n--- Done. See REFERENCE_CURRICULUM_PHASE3.md for the tutor walkthrough. ---")

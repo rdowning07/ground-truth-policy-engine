@@ -1,10 +1,10 @@
-# Reference curriculum: Day 3 — Rule composition (tutor walkthrough)
+# Reference curriculum: Phase 3 — Rule composition (tutor walkthrough)
 
 This document is a **reference curriculum** for Phase 3: explicit, step-by-step code with heavy comments for **rule functions**, **same return shape**, **failure accumulation**, and **allow/deny with reasons**. Every example is runnable. No shortcuts—one concept at a time.
 
-**Prerequisite:** You have completed [Phase 1](curriculum/phase_1_deterministic_evaluation.md) (one rule, many records) and [Phase 2](curriculum/phase_2_guard_clauses_validation.md) (validation, guard clauses). See [Day 1](REFERENCE_CURRICULUM_DAY1.md) and [Day 2](REFERENCE_CURRICULUM_DAY2.md) references.
+**Prerequisite:** You have completed [Phase 1](curriculum/phase_1_deterministic_evaluation.md) (one rule, many records) and [Phase 2](curriculum/phase_2_guard_clauses_validation.md) (validation, guard clauses). See [Phase 1](REFERENCE_CURRICULUM_PHASE1.md) and [Phase 2](REFERENCE_CURRICULUM_PHASE2.md) references.
 
-**How to use:** Read each section; run the code (copy into a file or use the [single runnable file](reference_day3_examples.py)). The comments explain *what this line does* and *why we write it this way*.
+**How to use:** Read each section; run the code (copy into a file or use the [single runnable file](reference_phase3_examples.py)). The comments explain *what this line does* and *why we write it this way*.
 
 **Tied to:** [Phase 3 — Rule composition](curriculum/phase_3_rule_composition.md) and [Phase 3 canonical example](canonical_examples/phase_3_canonical_example.md).
 
@@ -236,15 +236,15 @@ print(evaluate_all_rules(record_fail, rules))
 
 ## All examples in one runnable file
 
-The file [reference_day3_examples.py](reference_day3_examples.py) contains all of the above examples in order. Run:
+The file [reference_phase3_examples.py](reference_phase3_examples.py) contains all of the above examples in order. Run:
 
 ```bash
-python3 reference_day3_examples.py
+python3 reference_phase3_examples.py
 ```
 
 Use it as a reference when implementing Phase 3 in `src/engine.py`.
 
-**Previous:** [REFERENCE_CURRICULUM_DAY2.md](REFERENCE_CURRICULUM_DAY2.md) (Phase 2: guard clauses, validation).
+**Previous:** [REFERENCE_CURRICULUM_PHASE2.md](REFERENCE_CURRICULUM_PHASE2.md) (Phase 2). **Next:** [REFERENCE_CURRICULUM_PHASE4.md](REFERENCE_CURRICULUM_PHASE4.md) (Phase 4: decomposition).
 
 ---
 

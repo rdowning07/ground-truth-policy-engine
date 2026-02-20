@@ -10,7 +10,7 @@ Backend systems constantly answer: *“Does this record satisfy this rule?”* f
 
 ## What you will learn (primitives)
 
-We assume you have **no prior Python**. Before this phase, complete **[Python overview: Day 1](../python_overview_day1.md)** so you have clear definitions and fluency for: values and types, variables, **deterministic** (what it is, why we require it), comparisons, conditionals, lists, dicts, **loops** (what they are, why we use them, how we use them), **accumulators**, and functions. You will then use only:
+We assume you have **no prior Python**. Before this phase, complete **[Python fundamentals](../python_fundamentals.md)** so you have clear definitions and fluency for: values and types, variables, **deterministic** (what it is, why we require it), comparisons, conditionals, lists, dicts, **loops** (what they are, why we use them, how we use them), **accumulators**, and functions. You will then use only:
 
 - **Values and variables** — storing a single piece of data (e.g. a number, text, or yes/no).
 - **Lists** — ordered collections of values (e.g. a list of user records).

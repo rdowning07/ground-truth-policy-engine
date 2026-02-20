@@ -2,7 +2,7 @@
 
 This document is the map. Each phase has its own detailed curriculum and a canonical example. **Assume no prior Python;** concepts are introduced in context.
 
-**Before Phase 1:** If you have zero Python experience, work through **[Python overview: Day 1](python_overview_day1.md)**. It defines every concept you need (values, variables, deterministic, conditionals, lists, loops, accumulators, functions) in clear stages—what each is, why we use it, how we use it—and maps them to the Phase 1 example. For a one-place lookup of terms, see the **[Glossary](GLOSSARY.md)**. Then start Phase 1.
+**Before Phase 1:** If you have zero Python experience, work through **[Python fundamentals](python_fundamentals.md)**. It defines every concept you need (values, variables, deterministic, conditionals, lists, loops, accumulators, functions) in clear stages—what each is, why we use it, how we use it—and maps them to the Phase 1 example. For a one-place lookup of terms, see the **[Glossary](GLOSSARY.md)**. Then start Phase 1.
 
 **Avoiding overwhelm:** This course is 30 hours of content with no required prior Python. To avoid burnout, use **session boundaries** instead of doing whole phases in one sitting. See **[Recommended pacing](#recommended-pacing-and-session-boundaries)** below and the full comparison to other 0-to-fluency courses in **[CURRICULUM_EVALUATION.md](CURRICULUM_EVALUATION.md)**.
 
@@ -14,8 +14,8 @@ Use these as default stop/resume points. Each session is roughly 1–2 hours.
 
 | Session | Content | Stop after |
 |---------|---------|------------|
-| 1 | Day 1: Stage 0 + Stages 1–4 | Environment, script, values, variables, deterministic. |
-| 2 | Day 1: Stages 5–11 + Phase 1 mapping | Comparisons through functions; map canonical example. |
+| 1 | Python fundamentals: Stage 0 + Stages 1–4 | Environment, script, values, variables, deterministic. |
+| 2 | Python fundamentals: Stages 5–11 + Phase 1 mapping | Comparisons through functions; map canonical example. |
 | 3 | Phase 1 Hours 1–2 | One record, variable, conditional, single outcome. |
 | 4 | Phase 1 Hours 3–4 | List of records, for-loop, list of outcomes. |
 | 5 | Phase 1 Hours 5–6 | Accumulator, full function, return list. **Phase 1 complete.** |
@@ -60,11 +60,11 @@ Use these as default stop/resume points. Each session is roughly 1–2 hours.
 
 ## How to use this curriculum
 
-1. **(Zero Python?)** Do [Python overview: Day 1](python_overview_day1.md) first—stages 1–11 and the Phase 1 mapping table.
+1. **(Zero Python?)** Do [Python fundamentals](python_fundamentals.md) first—stages 1–11 and the Phase 1 mapping table.
 2. Use **[Recommended pacing](#recommended-pacing-and-session-boundaries)** so you don’t do whole phases in one sitting.
 3. Start with [Phase 1](curriculum/phase_1_deterministic_evaluation.md); read the phase doc and the [Phase 1 canonical example](canonical_examples/phase_1_canonical_example.md).
 4. Implement the phase in `src/engine.py` (or as directed); get critique.
 5. Proceed through phases 2–5 in order; each builds on the previous.
 6. For Phase 6, put the code in `rebuild/scratch.py` and do not copy from the main engine.
 
-See the [charter](charter.md) for non-negotiables and definition of progress. For a comparison to courses like 30 Days of Java and what was added to reduce overwhelm, see [CURRICULUM_EVALUATION.md](CURRICULUM_EVALUATION.md). For optional external practice in phase order, see [SUPPLEMENTAL_LEARNING.md](SUPPLEMENTAL_LEARNING.md). For where this curriculum sits in industry and what else jr devs need for other roles, see [INDUSTRY_EVALUATION.md](INDUSTRY_EVALUATION.md). For how this project fits the Boot.dev Python → Go backend path and ideas for continuing beyond it, see [BOOTDEV_ROADMAP.md](BOOTDEV_ROADMAP.md).
+See the [charter](charter.md) for non-negotiables and definition of progress. For what the reference curriculum units are and how they map to phases, see [REFERENCE_PHASES_DEFINITION.md](REFERENCE_PHASES_DEFINITION.md). For a comparison to courses like 30 Days of Java and what was added to reduce overwhelm, see [CURRICULUM_EVALUATION.md](CURRICULUM_EVALUATION.md). For optional external practice in phase order, see [SUPPLEMENTAL_LEARNING.md](SUPPLEMENTAL_LEARNING.md). For where this curriculum sits in industry and what else jr devs need for other roles, see [INDUSTRY_EVALUATION.md](INDUSTRY_EVALUATION.md). For how this project fits the Boot.dev Python → Go backend path and ideas for continuing beyond it, see [BOOTDEV_ROADMAP.md](BOOTDEV_ROADMAP.md).

@@ -1,8 +1,8 @@
 """
 Reference curriculum: Day 1 — Verbose code and comments (tutor walkthrough).
 
-This file contains all the examples from REFERENCE_CURRICULUM_DAY1.md in order.
-Run: python3 reference_day1_examples.py
+This file contains all the examples from REFERENCE_CURRICULUM_PHASE1.md in order.
+Run: python3 reference_phase1_examples.py
 
 Each section is commented as a tutor would explain it. No clever code—explicit and boring.
 """
@@ -223,4 +223,4 @@ output = evaluate_age_rule(sample_records)
 print("Input records:", sample_records)
 print("Output results:", output)
 
-print("\n--- Done. See REFERENCE_CURRICULUM_DAY1.md for the tutor walkthrough. ---")
+print("\n--- Done. See REFERENCE_CURRICULUM_PHASE1.md for the tutor walkthrough. ---")

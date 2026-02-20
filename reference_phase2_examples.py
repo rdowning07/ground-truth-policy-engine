@@ -1,10 +1,10 @@
 """
 Reference curriculum: Day 2 — Guard clauses and validation (tutor walkthrough).
 
-This file contains all the examples from REFERENCE_CURRICULUM_DAY2.md in order.
-Run: python3 reference_day2_examples.py
+This file contains all the examples from REFERENCE_CURRICULUM_PHASE2.md in order.
+Run: python3 reference_phase2_examples.py
 
-Prerequisite: Phase 1 (one rule, many records). See reference_day1_examples.py.
+Prerequisite: Phase 1 (one rule, many records). See reference_phase1_examples.py.
 """
 
 # =============================================================================
@@ -184,4 +184,4 @@ output = validate_then_evaluate_all(all_records)
 print("Input:", all_records)
 print("Output:", output)
 
-print("\n--- Done. See REFERENCE_CURRICULUM_DAY2.md for the tutor walkthrough. ---")
+print("\n--- Done. See REFERENCE_CURRICULUM_PHASE2.md for the tutor walkthrough. ---")

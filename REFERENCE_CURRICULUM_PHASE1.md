@@ -1,10 +1,10 @@
-# Reference curriculum: Day 1 — Verbose code and comments (tutor walkthrough)
+# Reference curriculum: Phase 1 — Verbose code and comments (tutor walkthrough)
 
-This document is a **reference curriculum** for Day 1: explicit, boring, step-by-step code with heavy comments, as a tutor would walk through it. Every example is runnable. No shortcuts, no clever one-liners—just one concept at a time.
+This document is a **reference curriculum** for Phase 1 (Python fundamentals + one rule, many records): explicit, step-by-step code with heavy comments, as a tutor would walk through it. Every example is runnable. No shortcuts, no clever one-liners—just one concept at a time.
 
-**How to use:** Read each section; run the code (copy into a file or use the [single runnable file](reference_day1_examples.py) that contains all examples in order). The comments are there to explain *what this line does* and *why we write it this way*.
+**How to use:** Read each section; run the code (copy into a file or use the [single runnable file](reference_phase1_examples.py) that contains all examples in order). The comments are there to explain *what this line does* and *why we write it this way*.
 
-**Tied to:** [Python overview: Day 1](python_overview_day1.md) (Stages 1–11) and [Phase 1 canonical example](canonical_examples/phase_1_canonical_example.md).
+**Tied to:** [Python fundamentals](python_fundamentals.md) (Stages 1–11) and [Phase 1 canonical example](canonical_examples/phase_1_canonical_example.md).
 
 ---
 
@@ -377,16 +377,16 @@ if __name__ == "__main__":
 
 ## All examples in one runnable file
 
-The file [reference_day1_examples.py](reference_day1_examples.py) contains all of the above examples in order. Run:
+The file [reference_phase1_examples.py](reference_phase1_examples.py) contains all of the above examples in order. Run:
 
 ```bash
-python3 reference_day1_examples.py
+python3 reference_phase1_examples.py
 ```
 
 to execute each section and see the output. Use it as a reference when you’re implementing Phase 1 in `src/engine.py`.
 
-**Next:** After Phase 1, see [REFERENCE_CURRICULUM_DAY2.md](REFERENCE_CURRICULUM_DAY2.md) for guard clauses and validation (Phase 2).
+**Next:** After Phase 1, see [REFERENCE_CURRICULUM_PHASE2.md](REFERENCE_CURRICULUM_PHASE2.md) for guard clauses and validation (Phase 2).
 
 ---
 
-Back to [Python overview: Day 1](python_overview_day1.md) · [Curriculum overview](curriculum_overview.md).
+Back to [Python fundamentals](python_fundamentals.md) · [Curriculum overview](curriculum_overview.md).

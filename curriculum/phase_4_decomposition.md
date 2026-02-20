@@ -70,7 +70,7 @@ By the end of Phase 4 you will have **clean separations**: validate, evaluate, f
 
 ## Canonical example
 
-See **[Phase 4 canonical example](../canonical_examples/phase_4_canonical_example.md)** for a decomposed pipeline with validate, evaluate, format, and orchestration.
+See **[Phase 4 canonical example](../canonical_examples/phase_4_canonical_example.md)** for a decomposed pipeline with validate, evaluate, format, and orchestration. For a tutor-style walkthrough, see **[REFERENCE_CURRICULUM_PHASE4.md](../REFERENCE_CURRICULUM_PHASE4.md)** and **[reference_phase4_examples.py](../reference_phase4_examples.py)**.
 
 ---
 
