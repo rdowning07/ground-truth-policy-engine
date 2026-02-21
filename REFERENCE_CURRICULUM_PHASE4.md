@@ -164,7 +164,7 @@ The file [reference_phase4_examples.py](reference_phase4_examples.py) contains a
 python3 reference_phase4_examples.py
 ```
 
-**Previous:** [REFERENCE_CURRICULUM_PHASE3.md](REFERENCE_CURRICULUM_PHASE3.md) (Phase 3: rule composition). **Next:** Phase 5 (stateful CLI) would have its own reference curriculum (REFERENCE_CURRICULUM_PHASE5.md) if you add one.
+**Previous:** [REFERENCE_CURRICULUM_PHASE3.md](REFERENCE_CURRICULUM_PHASE3.md) (Phase 3: rule composition). **Next:** [REFERENCE_CURRICULUM_PHASE5.md](REFERENCE_CURRICULUM_PHASE5.md) (Phase 5: stateful CLI).
 
 ---
 

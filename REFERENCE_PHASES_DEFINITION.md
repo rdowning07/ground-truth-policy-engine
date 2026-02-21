@@ -20,14 +20,14 @@ A **reference curriculum** unit is one markdown doc (e.g. `REFERENCE_CURRICULUM_
 | **Phase 2** | **Phase 2** | Guard clauses, validation, orchestration (validate then rule), structured failure, distinct kind (validation vs rule). |
 | **Phase 3** | **Phase 3** | Rule functions, same return shape, list of rules, failure accumulation, allow/deny with reasons, full composer. |
 | **Phase 4** | **Phase 4** | Function boundaries (validate / evaluate / format), orchestration (run_policy), separation of concerns. |
-| **Phase 5** | **Phase 5** | Stateful CLI (command loop, dispatch, in-memory store, add/list/eval). *No reference curriculum or examples created yet.* |
+| **Phase 5** | **Phase 5** | Stateful CLI (command loop, dispatch, in-memory store, add/list/eval). See [REFERENCE_CURRICULUM_PHASE5.md](REFERENCE_CURRICULUM_PHASE5.md) and [reference_phase5_examples.py](reference_phase5_examples.py). |
 | **Phase 6** | **Phase 6** | Rebuild from scratch. *No reference curriculum or examples created yet; the exercise is to rebuild without reference.* |
 
 So:
 
 - **Phase 1 reference** = Python fundamentals + Phase 1 (one unit covers both “prerequisite” and first phase).
 - **Phase 2–4 references** = Phases 2–4 one-to-one.
-- **Phase 5 reference** = Phase 5 (mapping defined; materials not created).
+- **Phase 5 reference** = Phase 5 (reference curriculum and runnable examples created).
 - **Phase 6 reference** = Phase 6 (mapping defined; materials not created; Phase 6 is “rebuild” so a reference would only state the goal, not step-by-step code).
 
 ---
@@ -37,7 +37,7 @@ So:
 - **Reference curriculum** = tutor walkthrough (markdown) + runnable examples (one `.py` file per phase).
 - **Phases** are the main curriculum units (curriculum doc + canonical example + implementation in `src/engine.py`).
 - **Mapping:** Phase 1 reference ≈ Python fundamentals + Phase 1; Phase 2 reference = Phase 2; Phase 3 = Phase 3; Phase 4 = Phase 4; Phase 5 = Phase 5; Phase 6 = Phase 6.
-- **Gap:** Phase 5 and Phase 6 references are defined but have no reference curriculum or example files yet.
+- **Gap:** Phase 6 reference is defined but has no reference curriculum or example files (Phase 6 is rebuild-from-scratch; reference would only state the goal).
 
 ---
 
